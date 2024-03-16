@@ -6,9 +6,9 @@ from st_pages import Page, show_pages, add_page_title
 
 show_pages(
     [
-        Page("app.py", "Curating a Career Plan"),
-        Page("page2.py", "Suggesting Potential Occupations and Wage Projections"),
-        Page("page3.py", "Making Optimal Choices Among Alternatives"),
+        Page("app.py", "Curating a Career Plan", icon="1️⃣"),
+        Page("page2.py", "Suggesting Potential Occupations and Wage Projections", icon="2️⃣"),
+        Page("page3.py", "Making Optimal Choices Among Alternatives", icon="3️⃣"),
     ]
 )
 
