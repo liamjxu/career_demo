@@ -33,7 +33,7 @@ for idx, (query, res) in enumerate(zip(all_queries, all_graphs)):
           st.write("## Query")
           st.write(query)
           st.write("## Causal Graph Created from Query")
-          st.write("The edge label numbers are GPT's scores for causal relationships represented by the edges.")
+          st.write("The edge label numbers are GPT's scores (out of 10) for causal relationships represented by the edges.")
           st.graphviz_chart(graph)
           st.write("## Causal Graph Node Explanation")
           st.write(res[0])
