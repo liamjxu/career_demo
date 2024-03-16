@@ -1,0 +1,1509 @@
+[
+    {
+        "Task": "Curating a Career Plan",
+        "Description": "Given a current career path and user preferences for an end-goal occupation, can we automatically curate a career plan that arrives at the end-goal occupation, with intermediate steps?",
+        "Exemplar Question": "I'm a first-year master's student at Stanford CS. I did previous research internships at Microsoft and Amazon on Large Language Models. I have previous publications at NLP conferences including EMNLP, NAACL, and ACL. If I want to eventually work for OpenAI as a research scientist, how should I plan my career path to maximize the probability of landing the job?",
+        "simulated_queries": [
+            "I'm a software engineer with 5 years of experience in Java and Python, currently working in a mid-sized tech company. I'm interested in transitioning to a data science role in a leading tech company like Google or Facebook. What steps should I take to make this transition successful?",
+            "I have a bachelor's degree in marketing and have been working in digital marketing for 3 years at a startup. I aspire to become a Chief Marketing Officer (CMO) at a Fortune 500 company. What career path and additional skills or qualifications should I pursue to achieve this goal?",
+            "I'm a recent graduate with a degree in mechanical engineering. I'm very interested in the renewable energy sector and want to work on wind turbine design. What experience and skills are necessary to enter this field, and how can I progress to a senior engineering position?",
+            "I've been working as a financial analyst for a large bank for the past 7 years. I'm now looking to pivot my career towards fintech, specifically in blockchain and cryptocurrency. What knowledge and experience are crucial for this transition, and what companies should I target?",
+            "I am a project manager with 10 years of experience in the construction industry. I'm aiming to shift my career towards technology project management, particularly in software development projects. What skills should I focus on acquiring, and what types of companies or projects would be the best fit for my transition?"
+        ],
+        "res_graphs": [
+            [
+                {
+                    "Professional Networking": "Building relationships with individuals in your desired field to gain insights, advice, and potential job opportunities.",
+                    "Skill Development": "Acquiring new skills or improving existing ones that are relevant to the target role.",
+                    "Industry Knowledge": "Understanding the trends, challenges, and opportunities within the target industry.",
+                    "Project Experience": "Gaining practical experience through projects that demonstrate relevant skills and knowledge.",
+                    "Resume and LinkedIn Optimization": "Enhancing your resume and LinkedIn profile to highlight relevant skills, experiences, and achievements.",
+                    "Interview Preparation": "Practicing and improving interview skills, specifically focusing on the target role and company.",
+                    "Job Application": "Applying for roles that match your skills and career aspirations."
+                },
+                [
+                    [
+                        "Skill Development",
+                        "Project Experience",
+                        8
+                    ],
+                    [
+                        "Skill Development",
+                        "Resume and LinkedIn Optimization",
+                        7
+                    ],
+                    [
+                        "Professional Networking",
+                        "Job Application",
+                        6
+                    ],
+                    [
+                        "Industry Knowledge",
+                        "Interview Preparation",
+                        7
+                    ],
+                    [
+                        "Project Experience",
+                        "Interview Preparation",
+                        8
+                    ],
+                    [
+                        "Resume and LinkedIn Optimization",
+                        "Job Application",
+                        9
+                    ],
+                    [
+                        "Interview Preparation",
+                        "Job Application",
+                        8
+                    ],
+                    [
+                        "Job Application",
+                        "Data Science Role at Leading Tech Company",
+                        7
+                    ]
+                ],
+                "\n\nThe causal graph starts with \"Skill Development\" and \"Professional Networking\" as foundational elements for transitioning to a data science role. Skill development is crucial for acquiring the technical skills needed in data science, such as machine learning, statistics, and data manipulation, which directly impacts the ability to undertake relevant \"Project Experience\" and enhance one's \"Resume and LinkedIn Optimization\". The score of 8 for the transition from \"Skill Development\" to \"Project Experience\" reflects the high importance of practical experience in demonstrating one's capabilities. The transition to \"Resume and LinkedIn Optimization\" is scored at 7, indicating its significant but slightly lesser importance compared to hands-on experience.\n\n\"Professional Networking\" is essential for uncovering job opportunities and gaining insights into the hiring process of leading tech companies, thus influencing the \"Job Application\" process with a score of 6. This reflects the importance of networking, though it's slightly less deterministic than direct skill application.\n\n\"Industry Knowledge\" contributes to effective \"Interview Preparation\" by understanding the context in which data science operates within the target companies, scored at 7. This knowledge, combined with \"Project Experience\", which also significantly impacts \"Interview Preparation\" (score of 8), prepares the candidate for technical and behavioral interview questions.\n\n\"Resume and LinkedIn Optimization\" directly leads to a more effective \"Job Application\" process, scored at 9, highlighting the critical role of presenting one's skills and experiences in a manner that resonates with recruiters and hiring managers.\n\nFinally, \"Interview Preparation\" significantly influences the success of the \"Job Application\" process, with a score of 8, indicating its crucial role in securing the job offer. The job application's success, scored at 7 in leading to a \"Data Science Role at Leading Tech Company\", encapsulates the culmination of all prior steps, reflecting the complexity and challenge of transitioning into such a role but also the feasibility with the right preparation and opportunities."
+            ],
+            [
+                {
+                    "Education Level": "The highest level of education attained, which can influence eligibility for certain positions.",
+                    "Work Experience": "The amount and relevance of work experience in the marketing field.",
+                    "Networking": "Building professional relationships that can lead to job opportunities and career advice.",
+                    "Industry Knowledge": "Understanding of current trends, practices, and innovations in the marketing industry.",
+                    "Leadership Skills": "Ability to lead and manage teams effectively.",
+                    "Strategic Thinking": "Capability to develop long-term plans and visions for a company's marketing efforts.",
+                    "Communication Skills": "Effectiveness in conveying ideas, both verbally and in writing.",
+                    "Certifications": "Additional qualifications specific to marketing or management that can enhance a resume.",
+                    "Company Size": "The size of the company where one works, which can impact the types of experiences and opportunities available.",
+                    "CMO Position": "The end goal of becoming a Chief Marketing Officer at a Fortune 500 company."
+                },
+                [
+                    [
+                        "Education Level",
+                        "Work Experience",
+                        7
+                    ],
+                    [
+                        "Work Experience",
+                        "Networking",
+                        8
+                    ],
+                    [
+                        "Work Experience",
+                        "Industry Knowledge",
+                        9
+                    ],
+                    [
+                        "Work Experience",
+                        "Leadership Skills",
+                        8
+                    ],
+                    [
+                        "Networking",
+                        "CMO Position",
+                        6
+                    ],
+                    [
+                        "Industry Knowledge",
+                        "Strategic Thinking",
+                        9
+                    ],
+                    [
+                        "Leadership Skills",
+                        "CMO Position",
+                        8
+                    ],
+                    [
+                        "Strategic Thinking",
+                        "CMO Position",
+                        7
+                    ],
+                    [
+                        "Communication Skills",
+                        "Leadership Skills",
+                        7
+                    ],
+                    [
+                        "Certifications",
+                        "Industry Knowledge",
+                        6
+                    ],
+                    [
+                        "Company Size",
+                        "CMO Position",
+                        5
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the multifaceted nature of career development towards becoming a Chief Marketing Officer (CMO) at a Fortune 500 company. \n\n- **Education Level to Work Experience (7):** A higher level of education, such as a bachelor's degree in marketing, is a strong foundation but its direct impact on acquiring higher-level positions diminishes over time, with work experience becoming more critical.\n\n- **Work Experience to Networking (8):** The more work experience one has, the more opportunities there are to build a professional network, which is crucial for career advancement.\n\n- **Work Experience to Industry Knowledge (9):** Direct experience in marketing roles significantly boosts one's understanding of the industry, which is essential for strategic decision-making in higher positions.\n\n- **Work Experience to Leadership Skills (8):** Practical work experience, especially in roles that involve team projects or management, directly contributes to developing leadership skills.\n\n- **Networking to CMO Position (6):** While networking is important, its direct impact on achieving a CMO position is less deterministic than other factors, as it primarily opens doors rather than builds skills.\n\n- **Industry Knowledge to Strategic Thinking (9):** A deep understanding of the marketing industry is crucial for developing effective long-term strategies, a key component of a CMO's role.\n\n- **Leadership Skills to CMO Position (8):** Strong leadership skills are essential for a CMO, who must manage diverse teams and lead strategic initiatives.\n\n- **Strategic Thinking to CMO Position (7):** The ability to think strategically is important for a CMO to contribute to the company's growth and adapt to changing market conditions.\n\n- **Communication Skills to Leadership Skills (7):** Effective communication is a foundational skill that supports leadership, enabling better team management and idea conveyance.\n\n- **Certifications to Industry Knowledge (6):** While certifications can enhance one's resume and provide specialized knowledge, their direct impact on understanding the broader industry is moderate.\n\n- **Company Size to CMO Position (5):** Working in larger companies can provide relevant experience for a CMO role in a Fortune 500 company, but it's not as directly impactful as the skills and experiences gained through the roles themselves."
+            ],
+            [
+                {
+                    "Education": "Formal academic qualifications obtained.",
+                    "Technical Skills": "Specific technical knowledge or proficiencies related to a job.",
+                    "Industry Experience": "Practical experience working in a specific industry.",
+                    "Networking": "Building professional relationships that can offer advice, support, and opportunities.",
+                    "Professional Certifications": "Credentials that demonstrate a specific skill or knowledge area, often recognized industry-wide.",
+                    "Project Management Skills": "Ability to plan, execute, and oversee projects to completion.",
+                    "Leadership Experience": "Experience in leading teams or projects, demonstrating ability to manage and inspire others.",
+                    "Senior Engineering Position": "A high-level role involving oversight of projects and potentially leading a team of engineers."
+                },
+                [
+                    [
+                        "Education",
+                        "Technical Skills",
+                        8
+                    ],
+                    [
+                        "Education",
+                        "Industry Experience",
+                        7
+                    ],
+                    [
+                        "Technical Skills",
+                        "Professional Certifications",
+                        7
+                    ],
+                    [
+                        "Industry Experience",
+                        "Networking",
+                        6
+                    ],
+                    [
+                        "Networking",
+                        "Senior Engineering Position",
+                        5
+                    ],
+                    [
+                        "Professional Certifications",
+                        "Project Management Skills",
+                        6
+                    ],
+                    [
+                        "Project Management Skills",
+                        "Leadership Experience",
+                        8
+                    ],
+                    [
+                        "Leadership Experience",
+                        "Senior Engineering Position",
+                        9
+                    ],
+                    [
+                        "Technical Skills",
+                        "Senior Engineering Position",
+                        4
+                    ]
+                ],
+                "\n\nThe causal graph starts with \"Education\" as a foundational variable, as formal academic qualifications are crucial in the field of mechanical engineering, especially for a specialized area like wind turbine design. Education directly influences the acquisition of \"Technical Skills\" necessary for the job, rated with a high score of 8, because specific knowledge in areas such as fluid dynamics, materials science, and CAD software is essential for designing wind turbines.\n\n\"Education\" also leads to \"Industry Experience\" with a score of 7, indicating that formal education often provides the initial opportunities for internships or entry-level positions in the renewable energy sector. This experience is vital for understanding the practical aspects of engineering work within the industry.\n\n\"Technical Skills\" are closely linked to \"Professional Certifications\" (score 7), as specialized certifications (e.g., in project management or renewable energy systems) can further validate an engineer's expertise and are often sought by employers in the renewable energy sector.\n\n\"Industry Experience\" facilitates \"Networking\" (score 6), emphasizing the importance of building professional relationships within the renewable energy sector. These connections can lead to new opportunities and are crucial for career advancement.\n\n\"Networking\" has a moderate influence on reaching a \"Senior Engineering Position\" (score 5), indicating that while important, it's not the only factor. Direct pathways to senior positions also include \"Technical Skills\" to \"Senior Engineering Position\" (score 4), showing that while technical skills are essential, they alone are not sufficient for advancement to senior roles without the support of other factors.\n\n\"Professional Certifications\" lead to \"Project Management Skills\" (score 6), as certifications often include training in project management, which is crucial for senior engineering roles that involve overseeing projects.\n\n\"Project Management Skills\" strongly influence \"Leadership Experience\" (score 8), as managing projects effectively often requires leading teams, making decisions, and demonstrating leadership qualities.\n\nFinally, \"Leadership Experience\" is the most direct and influential factor leading to a \"Senior Engineering Position\" (score 9), highlighting that the ability to lead, inspire, and manage teams is critical for attaining senior roles in engineering, especially in specialized fields like wind turbine design in the renewable energy sector."
+            ],
+            [
+                {
+                    "Education": "Formal academic qualifications or certifications relevant to the new field.",
+                    "Industry Experience": "Prior work experience in the relevant industry or closely related fields.",
+                    "Networking": "Building professional relationships within the target industry.",
+                    "Skill Development": "Acquiring new skills or improving existing ones pertinent to the target job.",
+                    "Understanding of Blockchain": "Comprehensive knowledge of blockchain technology and its applications.",
+                    "Understanding of Cryptocurrency": "In-depth knowledge of cryptocurrency markets, trading, and regulatory environment.",
+                    "Project Experience": "Hands-on experience with projects or tasks relevant to blockchain or cryptocurrency.",
+                    "Target Companies": "Identifying and targeting companies that align with career goals and values."
+                },
+                [
+                    [
+                        "Education",
+                        "Understanding of Blockchain",
+                        8
+                    ],
+                    [
+                        "Education",
+                        "Understanding of Cryptocurrency",
+                        7
+                    ],
+                    [
+                        "Industry Experience",
+                        "Networking",
+                        6
+                    ],
+                    [
+                        "Skill Development",
+                        "Understanding of Blockchain",
+                        9
+                    ],
+                    [
+                        "Skill Development",
+                        "Understanding of Cryptocurrency",
+                        8
+                    ],
+                    [
+                        "Networking",
+                        "Project Experience",
+                        7
+                    ],
+                    [
+                        "Understanding of Blockchain",
+                        "Project Experience",
+                        8
+                    ],
+                    [
+                        "Understanding of Cryptocurrency",
+                        "Project Experience",
+                        7
+                    ],
+                    [
+                        "Project Experience",
+                        "Target Companies",
+                        9
+                    ]
+                ],
+                "\n\nThe causal graph starts with foundational aspects such as Education and Industry Experience, which are crucial for anyone looking to pivot their career. Education directly influences one's understanding of both blockchain and cryptocurrency, as formal courses or certifications often provide the necessary theoretical background. The scores of 8 and 7, respectively, reflect the importance of education but also acknowledge that self-learning and practical experience can play significant roles.\n\nIndustry Experience is linked to Networking with a score of 6, indicating that while prior experience in a related field can make it easier to build professional connections, it's not the only way to network effectively.\n\nSkill Development is another critical variable, directly impacting one's understanding of blockchain and cryptocurrency with scores of 9 and 8. This highlights the importance of actively acquiring and improving relevant skills for career advancement.\n\nNetworking leads to Project Experience with a score of 7, suggesting that building professional relationships can open opportunities for hands-on experience in projects or tasks relevant to the target field.\n\nUnderstanding of Blockchain and Cryptocurrency both lead to Project Experience with scores of 8 and 7, indicating that a deep theoretical knowledge can significantly enhance the quality and relevance of one's practical experience.\n\nFinally, Project Experience directly influences the ability to target and appeal to companies in the fintech space, with a score of 9. This underscores the importance of practical, hands-on experience in securing a position in the desired field."
+            ],
+            [
+                {
+                    "Industry Knowledge": "Understanding of the specific industry's trends, challenges, and practices.",
+                    "Technical Skills": "Proficiency in specific technical tools and methodologies relevant to the job.",
+                    "Project Management Experience": "Years of experience and expertise in managing projects, including planning, execution, and team management.",
+                    "Networking": "Building professional relationships that can provide support, information, and opportunities.",
+                    "Certifications": "Professional certifications that validate one's skills and knowledge in a specific area.",
+                    "Adaptability": "Ability to adjust to new environments, technologies, and challenges.",
+                    "Company Fit": "Alignment with a company's culture, values, and needs.",
+                    "Project Fit": "Alignment with the requirements and challenges of a specific project."
+                },
+                [
+                    [
+                        "Industry Knowledge",
+                        "Technical Skills",
+                        8
+                    ],
+                    [
+                        "Technical Skills",
+                        "Certifications",
+                        7
+                    ],
+                    [
+                        "Project Management Experience",
+                        "Technical Skills",
+                        6
+                    ],
+                    [
+                        "Networking",
+                        "Company Fit",
+                        7
+                    ],
+                    [
+                        "Networking",
+                        "Project Fit",
+                        6
+                    ],
+                    [
+                        "Certifications",
+                        "Company Fit",
+                        5
+                    ],
+                    [
+                        "Adaptability",
+                        "Company Fit",
+                        8
+                    ],
+                    [
+                        "Adaptability",
+                        "Project Fit",
+                        7
+                    ],
+                    [
+                        "Company Fit",
+                        "Project Fit",
+                        9
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the transition from a project management role in the construction industry to a technology project management role, specifically in software development projects. \n\n- **Industry Knowledge to Technical Skills (8):** A strong understanding of technology trends, challenges, and practices is crucial for acquiring relevant technical skills. This relationship is rated highly because knowledge of the industry directly influences the type of technical skills one needs to focus on.\n\n- **Technical Skills to Certifications (7):** Acquiring technical skills often leads to pursuing certifications that validate these skills. While not all technical skills require certification, in the technology industry, certain certifications can significantly boost one's credibility and job prospects.\n\n- **Project Management Experience to Technical Skills (6):** Experience in project management provides a foundation for learning technical skills specific to software development projects. This relationship is significant but not as strong as others because project management skills are somewhat transferable across industries, but acquiring new technical skills may require substantial effort.\n\n- **Networking to Company Fit (7) and Project Fit (6):** Networking is crucial for understanding company cultures and project requirements, which can significantly influence one's ability to transition into a new role. Networking can directly lead to opportunities that are a good fit both in terms of company culture and project requirements.\n\n- **Certifications to Company Fit (5):** While certifications can enhance one's job prospects, their direct impact on fitting into a specific company's culture is less pronounced. Certifications are more about validating skills than ensuring cultural fit.\n\n- **Adaptability to Company Fit (8) and Project Fit (7):** The ability to adjust to new environments, technologies, and challenges is crucial for transitioning into a technology-focused role. Adaptability ensures that an individual can integrate well into a new company and adapt to the requirements of specific projects.\n\n- **Company Fit to Project Fit (9):** Finding a company that aligns with one's values and needs is crucial for working on projects that are a good fit. This relationship is rated the highest because a good match with the company culture and values is often a prerequisite for being assigned to suitable projects.\n\nThis causal graph outlines the key factors and their relationships in transitioning to a technology project management role, focusing on acquiring relevant skills, certifications, and understanding the importance of networking, adaptability, and alignment with company and project requirements."
+            ]
+        ],
+        "merged_graphs": [
+            {
+                "Professional Networking": "Building relationships with individuals in your desired field to gain insights, advice, and potential job opportunities.",
+                "Skill Development": "Acquiring new skills or improving existing ones that are relevant to the target role.",
+                "Industry Knowledge": "Understanding the trends, challenges, and opportunities within the target industry.",
+                "Project Experience": "Gaining practical experience through projects that demonstrate relevant skills and knowledge.",
+                "Resume and LinkedIn Optimization": "Enhancing your resume and LinkedIn profile to highlight relevant skills, experiences, and achievements.",
+                "Interview Preparation": "Practicing and improving interview skills, specifically focusing on the target role and company.",
+                "Job Application": "Applying for roles that match your skills and career aspirations.",
+                "Education Level": "The highest level of education attained, which can influence eligibility for certain positions.",
+                "Work Experience": "The amount and relevance of work experience in the field.",
+                "Leadership Skills": "Ability to lead and manage teams effectively.",
+                "Strategic Thinking": "Capability to develop long-term plans and visions for a company's efforts.",
+                "Communication Skills": "Effectiveness in conveying ideas, both verbally and in writing.",
+                "Certifications": "Additional qualifications specific to a field that can enhance a resume.",
+                "Company Size": "The size of the company where one works, which can impact the types of experiences and opportunities available.",
+                "Technical Skills": "Specific technical knowledge or proficiencies related to a job.",
+                "Professional Certifications": "Credentials that demonstrate a specific skill or knowledge area, often recognized industry-wide.",
+                "Project Management Skills": "Ability to plan, execute, and oversee projects to completion.",
+                "Leadership Experience": "Experience in leading teams or projects, demonstrating ability to manage and inspire others.",
+                "Understanding of Blockchain": "Comprehensive knowledge of blockchain technology and its applications.",
+                "Understanding of Cryptocurrency": "In-depth knowledge of cryptocurrency markets, trading, and regulatory environment.",
+                "Target Companies": "Identifying and targeting companies that align with career goals and values.",
+                "Adaptability": "Ability to adjust to new environments, technologies, and challenges.",
+                "Company Fit": "Alignment with a company's culture, values, and needs.",
+                "Project Fit": "Alignment with the requirements and challenges of a specific project.",
+                "Target Position": "The end goal occupation or position the user aims to achieve."
+            },
+            [
+                [
+                    "Skill Development",
+                    "Project Experience",
+                    8
+                ],
+                [
+                    "Skill Development",
+                    "Resume and LinkedIn Optimization",
+                    7
+                ],
+                [
+                    "Professional Networking",
+                    "Job Application",
+                    6
+                ],
+                [
+                    "Industry Knowledge",
+                    "Interview Preparation",
+                    7
+                ],
+                [
+                    "Project Experience",
+                    "Interview Preparation",
+                    8
+                ],
+                [
+                    "Resume and LinkedIn Optimization",
+                    "Job Application",
+                    9
+                ],
+                [
+                    "Interview Preparation",
+                    "Job Application",
+                    8
+                ],
+                [
+                    "Education Level",
+                    "Work Experience",
+                    7
+                ],
+                [
+                    "Work Experience",
+                    "Professional Networking",
+                    8
+                ],
+                [
+                    "Work Experience",
+                    "Industry Knowledge",
+                    9
+                ],
+                [
+                    "Work Experience",
+                    "Leadership Skills",
+                    8
+                ],
+                [
+                    "Professional Networking",
+                    "Target Position",
+                    6
+                ],
+                [
+                    "Industry Knowledge",
+                    "Strategic Thinking",
+                    9
+                ],
+                [
+                    "Leadership Skills",
+                    "Target Position",
+                    8
+                ],
+                [
+                    "Strategic Thinking",
+                    "Target Position",
+                    7
+                ],
+                [
+                    "Communication Skills",
+                    "Leadership Skills",
+                    7
+                ],
+                [
+                    "Certifications",
+                    "Industry Knowledge",
+                    6
+                ],
+                [
+                    "Company Size",
+                    "Target Position",
+                    5
+                ],
+                [
+                    "Education Level",
+                    "Technical Skills",
+                    8
+                ],
+                [
+                    "Technical Skills",
+                    "Professional Certifications",
+                    7
+                ],
+                [
+                    "Professional Certifications",
+                    "Project Management Skills",
+                    6
+                ],
+                [
+                    "Project Management Skills",
+                    "Leadership Experience",
+                    8
+                ],
+                [
+                    "Leadership Experience",
+                    "Target Position",
+                    9
+                ],
+                [
+                    "Technical Skills",
+                    "Target Position",
+                    4
+                ],
+                [
+                    "Skill Development",
+                    "Understanding of Blockchain",
+                    9
+                ],
+                [
+                    "Skill Development",
+                    "Understanding of Cryptocurrency",
+                    8
+                ],
+                [
+                    "Professional Networking",
+                    "Project Experience",
+                    7
+                ],
+                [
+                    "Understanding of Blockchain",
+                    "Project Experience",
+                    8
+                ],
+                [
+                    "Understanding of Cryptocurrency",
+                    "Project Experience",
+                    7
+                ],
+                [
+                    "Project Experience",
+                    "Target Companies",
+                    9
+                ],
+                [
+                    "Industry Knowledge",
+                    "Technical Skills",
+                    8
+                ],
+                [
+                    "Technical Skills",
+                    "Certifications",
+                    7
+                ],
+                [
+                    "Project Management Skills",
+                    "Technical Skills",
+                    6
+                ],
+                [
+                    "Professional Networking",
+                    "Company Fit",
+                    7
+                ],
+                [
+                    "Professional Networking",
+                    "Project Fit",
+                    6
+                ],
+                [
+                    "Certifications",
+                    "Company Fit",
+                    5
+                ],
+                [
+                    "Adaptability",
+                    "Company Fit",
+                    8
+                ],
+                [
+                    "Adaptability",
+                    "Project Fit",
+                    7
+                ],
+                [
+                    "Company Fit",
+                    "Project Fit",
+                    9
+                ],
+                [
+                    "Job Application",
+                    "Target Position",
+                    7
+                ]
+            ],
+            "\n\nThe merged causal graph integrates key factors from various career paths, focusing on common elements that contribute to career development and progression towards a target position. The graph emphasizes the importance of foundational elements such as \"Skill Development,\" \"Professional Networking,\" and \"Education Level,\" which are crucial across different fields. These elements lead to intermediate outcomes like \"Project Experience,\" \"Industry Knowledge,\" and \"Leadership Skills,\" which are essential for demonstrating competence and readiness for the target position.\n\n\"Skill Development\" is central, directly impacting \"Project Experience\" and \"Understanding of Blockchain/Cryptocurrency\" (for relevant fields), reflecting the importance of acquiring relevant skills for practical application and industry relevance. \"Professional Networking\" facilitates \"Job Application\" and connections to \"Target Companies,\" highlighting networking's role in uncovering opportunities and advancing towards the target position.\n\n\"Work Experience\" serves as a bridge, enhancing \"Professional Networking,\" \"Industry Knowledge,\" and \"Leadership Skills,\" indicating that practical experience in the field is invaluable for career advancement. \"Education Level\" and \"Technical Skills\" are closely linked, with education serving as a foundation for acquiring technical and industry-specific skills.\n\nThe graph also incorporates \"Leadership Experience\" and \"Project Management Skills\" as critical for higher-level positions, reflecting the need for management and leadership capabilities in addition to technical proficiency.\n\nFinally, \"Job Application\" and \"Company Fit\" are directly linked to achieving the \"Target Position,\" emphasizing the importance of aligning one's skills, experiences, and values with potential employers and specific job roles. This comprehensive graph provides a structured pathway for career development, highlighting the interconnectedness of various factors in achieving career goals."
+        ]
+    },
+    {
+        "Task": "Suggesting Potential Occupations and Wage Projections",
+        "Description": "Given a user's interests, can we suggest potential occupations for the user and cast e.g. the wage for those occupations?",
+        "Exemplar Question": "I'm passionate about environmental sustainability and have a background in environmental science. What are some emerging green jobs that align with my interests, and what can I expect in terms of salary and job growth in these areas?",
+        "simulated_queries": [
+            "I have a degree in computer science and love coding. What are the most in-demand programming languages, and what kind of salary can I expect in jobs requiring these skills?",
+            "As someone with a strong background in finance and a keen interest in technology, what fintech roles are available that could leverage my skills, and what is the typical career progression in this field?",
+            "I am passionate about education and have experience teaching. What are the latest trends in educational technology, and how can I transition into an EdTech career, including expected salaries?",
+            "With a background in graphic design and a love for video games, what opportunities are there in game design for me, and what is the average income for these positions?",
+            "I have experience in healthcare and am interested in public health. What are the career opportunities in public health policy or administration, and what are the salary ranges and growth prospects in this sector?"
+        ],
+        "res_graphs": [
+            [
+                {
+                    "Educational Background": "The level and field of education attained, such as a degree in computer science.",
+                    "Technical Skills": "Specific technical capabilities, including proficiency in programming languages.",
+                    "In-Demand Programming Languages": "Programming languages that are currently most sought after in the job market.",
+                    "Job Market Demand": "The current demand for specific roles or skills in the job market.",
+                    "Occupation Type": "The category or nature of jobs that align with one's skills and interests.",
+                    "Salary": "The compensation or wage earned from employment."
+                },
+                [
+                    [
+                        "Educational Background",
+                        "Technical Skills",
+                        8
+                    ],
+                    [
+                        "Technical Skills",
+                        "In-Demand Programming Languages",
+                        7
+                    ],
+                    [
+                        "In-Demand Programming Languages",
+                        "Job Market Demand",
+                        9
+                    ],
+                    [
+                        "Job Market Demand",
+                        "Occupation Type",
+                        8
+                    ],
+                    [
+                        "Occupation Type",
+                        "Salary",
+                        6
+                    ]
+                ],
+                "\n\nThe causal graph starts with \"Educational Background\" because the level and field of education one has attained significantly influence their technical skills, especially in fields like computer science where specific knowledge and skills are essential. The strength of this relationship is rated 8 because, while education is crucial, self-taught skills and external certifications can also contribute significantly to one's technical abilities.\n\n\"Technical Skills\" lead to \"In-Demand Programming Languages\" with a strength of 7. This relationship acknowledges that having a broad set of technical skills allows one to adapt and learn programming languages that are in demand, but it also recognizes that external factors such as emerging technologies and market needs can influence which languages become in-demand.\n\nThe link between \"In-Demand Programming Languages\" and \"Job Market Demand\" is given a strength of 9. This high rating reflects the direct impact that the demand for specific programming languages has on the job market. As certain languages become more sought after due to industry trends or technological advancements, the demand for professionals skilled in those languages increases.\n\n\"Job Market Demand\" affects \"Occupation Type\" with a strength of 8. This relationship signifies that the demand for certain skills directly influences the types of occupations that are available and sought after in the job market. For instance, a high demand for Python programming skills could lead to more opportunities in data science and machine learning roles.\n\nFinally, the connection between \"Occupation Type\" and \"Salary\" is rated a 6. This reflects the understanding that while the type of occupation significantly influences salary, there are other factors such as geographic location, company size, and individual negotiation skills that also play critical roles in determining one's salary."
+            ],
+            [
+                {
+                    "Educational Background": "Formal education and training in a relevant field, such as finance, economics, or computer science.",
+                    "Professional Experience": "Previous work experience in finance, technology, or related fields.",
+                    "Skill Development": "Acquisition of specific skills relevant to fintech, such as programming, data analysis, and financial modeling.",
+                    "Networking": "Building professional relationships within the finance and technology sectors.",
+                    "Industry Knowledge": "Understanding of the fintech industry, including trends, key players, and regulatory environment.",
+                    "Role Exploration": "Investigation and consideration of various roles within fintech that align with one's skills and interests.",
+                    "Job Application": "The process of applying for fintech positions, including resume submission and interviews.",
+                    "Career Progression": "Advancement and growth within the fintech sector, potentially including promotions, role changes, and salary increases."
+                },
+                [
+                    [
+                        "Educational Background",
+                        "Skill Development",
+                        7
+                    ],
+                    [
+                        "Professional Experience",
+                        "Skill Development",
+                        8
+                    ],
+                    [
+                        "Skill Development",
+                        "Industry Knowledge",
+                        9
+                    ],
+                    [
+                        "Networking",
+                        "Role Exploration",
+                        8
+                    ],
+                    [
+                        "Industry Knowledge",
+                        "Role Exploration",
+                        7
+                    ],
+                    [
+                        "Role Exploration",
+                        "Job Application",
+                        9
+                    ],
+                    [
+                        "Job Application",
+                        "Career Progression",
+                        8
+                    ]
+                ],
+                "\n\nThe causal graph starts with foundational aspects such as \"Educational Background\" and \"Professional Experience,\" which are crucial for acquiring the necessary \"Skill Development\" for a career in fintech. The scores of 7 and 8, respectively, reflect the strong but not exclusive influence these factors have on skill development. \n\n\"Skill Development\" directly influences \"Industry Knowledge\" with a score of 9, indicating that the skills acquired are essential for understanding the fintech industry. This is a critical step as it bridges the gap between having general finance and technology skills and applying them within the specific context of fintech.\n\n\"Networking\" and \"Industry Knowledge\" both play significant roles in \"Role Exploration,\" with scores of 8 and 7, respectively. Networking provides insights and opportunities that are not always visible through formal job search mechanisms, while a deep understanding of the industry helps in identifying roles that match one's skills and interests.\n\n\"Role Exploration\" leads directly to \"Job Application\" with a score of 9, emphasizing the importance of thoroughly understanding available roles before applying. This step is crucial for successful job applications in the fintech sector.\n\nFinally, \"Job Application\" leads to \"Career Progression\" with a score of 8, indicating that securing a job is a significant step towards career advancement in fintech, but it's not the only factor that influences career growth. Continuous learning, networking, and performance in the role also play critical roles in career progression."
+            ],
+            [
+                {
+                    "Interests": "Personal preferences and inclinations towards certain fields or activities.",
+                    "Experience": "The accumulation of knowledge or skill that comes from direct participation in events or activities.",
+                    "Education": "Formal process of learning and acquiring knowledge, typically in a school or university setting.",
+                    "Networking": "The act of interacting with others to exchange information and develop professional or social contacts.",
+                    "Skill Development": "The process of identifying and nurturing individual competencies and abilities.",
+                    "Industry Trends": "Current movements or directions in which specific industries, like EdTech, are evolving.",
+                    "Job Opportunities": "Available positions or roles that match a person's skills and interests within an industry.",
+                    "Salary Expectations": "Anticipated amount of compensation for a job, based on factors like role, experience, and location."
+                },
+                [
+                    [
+                        "Interests",
+                        "Skill Development",
+                        7
+                    ],
+                    [
+                        "Experience",
+                        "Skill Development",
+                        8
+                    ],
+                    [
+                        "Education",
+                        "Skill Development",
+                        6
+                    ],
+                    [
+                        "Skill Development",
+                        "Networking",
+                        7
+                    ],
+                    [
+                        "Networking",
+                        "Job Opportunities",
+                        8
+                    ],
+                    [
+                        "Industry Trends",
+                        "Job Opportunities",
+                        7
+                    ],
+                    [
+                        "Job Opportunities",
+                        "Salary Expectations",
+                        9
+                    ]
+                ],
+                "\n\nThe causal graph starts with \"Interests,\" \"Experience,\" and \"Education\" as foundational variables influencing \"Skill Development.\" The reasoning here is that a person's interests guide what skills they choose to develop; their past experience provides a base of knowledge and skills to build upon; and their formal education can offer foundational knowledge and skills relevant to their career path. The scores reflect the strength of these influences, with experience having a slightly stronger influence on skill development due to its practical nature.\n\n\"Skill Development\" then leads to \"Networking,\" indicating that as individuals develop their skills, they also increase their ability to network effectively within their chosen field. This is because they have more to offer and discuss with peers, making networking efforts more fruitful. The score reflects a strong, but not absolute, influence since networking success also depends on interpersonal skills and opportunities.\n\n\"Networking\" is a precursor to \"Job Opportunities,\" as networking often leads to learning about and securing job opportunities. The score here is high because networking is a well-known and effective way to discover job openings and get referrals.\n\n\"Industry Trends\" also influence \"Job Opportunities.\" Staying informed about the latest trends in a field like EdTech can help individuals identify emerging job opportunities that align with future industry needs. The score reflects a significant influence, though it's slightly lower than networking because not all job opportunities are directly tied to the latest trends.\n\nFinally, \"Job Opportunities\" lead to \"Salary Expectations.\" The type of job opportunities a person can secure directly influences their salary expectations. This relationship has a high score because the job role, industry, and level of responsibility are primary determinants of salary.\n\nThis causal graph represents a simplified model of how a person passionate about education and with teaching experience can transition into an EdTech career, including factors that influence salary expectations."
+            ],
+            [
+                {
+                    "Educational Background": "Formal education or training in a specific field, such as a degree in graphic design.",
+                    "Industry Knowledge": "Understanding of the specific industry, including trends, tools, and practices.",
+                    "Skill Development": "Acquiring and refining skills relevant to the desired career path.",
+                    "Networking": "Building professional relationships within the industry.",
+                    "Portfolio Development": "Creating a collection of work that showcases skills and accomplishments.",
+                    "Job Market Understanding": "Awareness of the demand, opportunities, and requirements in the job market.",
+                    "Occupation Selection": "Choosing a specific job role that aligns with interests and skills.",
+                    "Income Level": "The salary or wage earned from the occupation."
+                },
+                [
+                    [
+                        "Educational Background",
+                        "Skill Development",
+                        8
+                    ],
+                    [
+                        "Educational Background",
+                        "Industry Knowledge",
+                        7
+                    ],
+                    [
+                        "Skill Development",
+                        "Portfolio Development",
+                        9
+                    ],
+                    [
+                        "Industry Knowledge",
+                        "Networking",
+                        8
+                    ],
+                    [
+                        "Networking",
+                        "Occupation Selection",
+                        7
+                    ],
+                    [
+                        "Portfolio Development",
+                        "Occupation Selection",
+                        9
+                    ],
+                    [
+                        "Job Market Understanding",
+                        "Occupation Selection",
+                        8
+                    ],
+                    [
+                        "Occupation Selection",
+                        "Income Level",
+                        6
+                    ]
+                ],
+                "\n\nThe causal graph starts with \"Educational Background\" as it is foundational for acquiring the necessary knowledge and skills for a career in game design. This background is crucial for both \"Skill Development\" and \"Industry Knowledge\". A degree in graphic design, for instance, not only imparts specific skills but also provides an understanding of the broader industry, which is rated with a strength of 8 and 7 respectively due to the direct impact on career development.\n\n\"Skill Development\" leads directly to \"Portfolio Development\" with a high score of 9, indicating that refining skills is almost directly translated into the quality and breadth of the portfolio, which is essential for showcasing abilities to potential employers in game design.\n\n\"Industry Knowledge\" contributes to effective \"Networking\" (score of 8), as understanding industry trends and practices makes it easier to connect with professionals and opportunities within the game design field.\n\n\"Networking\" and \"Portfolio Development\" both significantly influence \"Occupation Selection\" (scores of 7 and 9, respectively), highlighting the importance of professional connections and a strong portfolio in securing a desired position in game design.\n\n\"Job Market Understanding\" also plays a crucial role in \"Occupation Selection\" (score of 8), as awareness of current demand and opportunities guides the job search and application process.\n\nFinally, the \"Occupation Selection\" leads to \"Income Level\" with a score of 6. This indicates a moderate deterministic relationship, acknowledging that while the choice of occupation influences income, there are also other factors (such as location, company, and individual negotiation) that can affect the final salary."
+            ],
+            [
+                {
+                    "Education Level": "The highest level of education attained, which can significantly impact career opportunities and salary in public health policy or administration.",
+                    "Relevant Experience": "Work experience in healthcare or related fields that directly contributes to qualifications for careers in public health policy or administration.",
+                    "Networking": "Building professional relationships that can lead to job opportunities and career advancement in public health.",
+                    "Public Health Certifications": "Certifications specific to public health that can enhance qualifications and career prospects.",
+                    "Policy Knowledge": "Understanding of health policies, which is crucial for careers in public health policy.",
+                    "Administration Skills": "Skills related to managing public health programs and initiatives, important for careers in public health administration.",
+                    "Job Market": "The demand for professionals in public health policy or administration, which affects job availability and salary ranges.",
+                    "Salary Range": "The compensation range for positions in public health policy or administration, influenced by various factors including education, experience, and job market."
+                },
+                [
+                    [
+                        "Education Level",
+                        "Salary Range",
+                        7
+                    ],
+                    [
+                        "Relevant Experience",
+                        "Salary Range",
+                        8
+                    ],
+                    [
+                        "Networking",
+                        "Job Market",
+                        6
+                    ],
+                    [
+                        "Public Health Certifications",
+                        "Salary Range",
+                        5
+                    ],
+                    [
+                        "Policy Knowledge",
+                        "Public Health Certifications",
+                        4
+                    ],
+                    [
+                        "Administration Skills",
+                        "Public Health Certifications",
+                        3
+                    ],
+                    [
+                        "Job Market",
+                        "Salary Range",
+                        7
+                    ],
+                    [
+                        "Education Level",
+                        "Public Health Certifications",
+                        6
+                    ],
+                    [
+                        "Relevant Experience",
+                        "Policy Knowledge",
+                        7
+                    ],
+                    [
+                        "Relevant Experience",
+                        "Administration Skills",
+                        7
+                    ]
+                ],
+                "\n\nThe causal graph and variables were chosen based on how they directly influence career opportunities, growth prospects, and salary ranges in the field of public health policy or administration. \n\n- **Education Level** has a strong influence on salary range (score of 7) because higher educational qualifications often lead to better-paying jobs. It also affects the ability to obtain public health certifications (score of 6), which can further enhance career prospects.\n\n- **Relevant Experience** in healthcare or related fields is crucial for both salary (score of 8) and acquiring specific knowledge and skills (scores of 7 for both Policy Knowledge and Administration Skills). This experience directly impacts one's qualifications for higher positions and salary negotiations.\n\n- **Networking** influences the job market (score of 6) by opening up more opportunities through professional connections, which can indirectly affect salary ranges by providing access to better job opportunities.\n\n- **Public Health Certifications** can boost salary range (score of 5) by demonstrating specialized knowledge and skills. The acquisition of these certifications is influenced by both Policy Knowledge and Administration Skills (scores of 4 and 3, respectively), indicating that a foundational understanding and skill set in public health are necessary to obtain certifications.\n\n- **Policy Knowledge** and **Administration Skills** are essential competencies for careers in public health policy and administration. They contribute to the ability to obtain relevant certifications, indicating a pathway of professional development within the field.\n\n- **Job Market** directly impacts the salary range (score of 7), as the demand for professionals in public health policy or administration can drive up salaries. This is influenced by networking, which can uncover more job opportunities.\n\nThis causal graph represents a simplified model of how various factors contribute to career development in public health policy or administration, focusing on aspects that directly affect job opportunities, growth prospects, and salary ranges."
+            ]
+        ],
+        "merged_graphs": [
+            {
+                "Educational Background": "The level and field of education attained, such as a degree in computer science, finance, economics, graphic design, or public health.",
+                "Technical Skills": "Specific technical capabilities, including proficiency in programming languages.",
+                "In-Demand Programming Languages": "Programming languages that are currently most sought after in the job market.",
+                "Job Market Demand": "The current demand for specific roles or skills in the job market.",
+                "Occupation Type": "The category or nature of jobs that align with one's skills and interests.",
+                "Salary": "The compensation or wage earned from employment.",
+                "Professional Experience": "Previous work experience in finance, technology, healthcare, or related fields.",
+                "Skill Development": "Acquisition of specific skills relevant to one's career path, including programming, data analysis, financial modeling, and administration skills.",
+                "Networking": "Building professional relationships within one's industry.",
+                "Industry Knowledge": "Understanding of one's industry, including trends, key players, and regulatory environment.",
+                "Role Exploration": "Investigation and consideration of various roles within one's industry that align with skills and interests.",
+                "Job Application": "The process of applying for positions, including resume submission and interviews.",
+                "Career Progression": "Advancement and growth within one's sector, potentially including promotions, role changes, and salary increases.",
+                "Interests": "Personal preferences and inclinations towards certain fields or activities.",
+                "Experience": "The accumulation of knowledge or skill that comes from direct participation in events or activities.",
+                "Industry Trends": "Current movements or directions in which specific industries are evolving.",
+                "Job Opportunities": "Available positions or roles that match a person's skills and interests within an industry.",
+                "Salary Expectations": "Anticipated amount of compensation for a job, based on factors like role, experience, and location.",
+                "Portfolio Development": "Creating a collection of work that showcases skills and accomplishments.",
+                "Job Market Understanding": "Awareness of the demand, opportunities, and requirements in the job market.",
+                "Occupation Selection": "Choosing a specific job role that aligns with interests and skills.",
+                "Income Level": "The salary or wage earned from the occupation.",
+                "Public Health Certifications": "Certifications specific to public health that can enhance qualifications and career prospects.",
+                "Policy Knowledge": "Understanding of health policies, which is crucial for careers in public health policy.",
+                "Administration Skills": "Skills related to managing public health programs and initiatives, important for careers in public health administration."
+            },
+            [
+                [
+                    "Educational Background",
+                    "Technical Skills",
+                    8
+                ],
+                [
+                    "Technical Skills",
+                    "In-Demand Programming Languages",
+                    7
+                ],
+                [
+                    "In-Demand Programming Languages",
+                    "Job Market Demand",
+                    9
+                ],
+                [
+                    "Job Market Demand",
+                    "Occupation Type",
+                    8
+                ],
+                [
+                    "Occupation Type",
+                    "Salary",
+                    6
+                ],
+                [
+                    "Educational Background",
+                    "Skill Development",
+                    7.5
+                ],
+                [
+                    "Professional Experience",
+                    "Skill Development",
+                    8
+                ],
+                [
+                    "Skill Development",
+                    "Industry Knowledge",
+                    9
+                ],
+                [
+                    "Networking",
+                    "Role Exploration",
+                    8
+                ],
+                [
+                    "Industry Knowledge",
+                    "Role Exploration",
+                    7
+                ],
+                [
+                    "Role Exploration",
+                    "Job Application",
+                    9
+                ],
+                [
+                    "Job Application",
+                    "Career Progression",
+                    8
+                ],
+                [
+                    "Interests",
+                    "Skill Development",
+                    7
+                ],
+                [
+                    "Experience",
+                    "Skill Development",
+                    8
+                ],
+                [
+                    "Skill Development",
+                    "Networking",
+                    7
+                ],
+                [
+                    "Networking",
+                    "Job Opportunities",
+                    8
+                ],
+                [
+                    "Industry Trends",
+                    "Job Opportunities",
+                    7
+                ],
+                [
+                    "Job Opportunities",
+                    "Salary Expectations",
+                    9
+                ],
+                [
+                    "Educational Background",
+                    "Industry Knowledge",
+                    7
+                ],
+                [
+                    "Skill Development",
+                    "Portfolio Development",
+                    9
+                ],
+                [
+                    "Portfolio Development",
+                    "Occupation Selection",
+                    9
+                ],
+                [
+                    "Job Market Understanding",
+                    "Occupation Selection",
+                    8
+                ],
+                [
+                    "Occupation Selection",
+                    "Income Level",
+                    6
+                ],
+                [
+                    "Networking",
+                    "Job Market",
+                    6
+                ],
+                [
+                    "Public Health Certifications",
+                    "Salary",
+                    5
+                ],
+                [
+                    "Policy Knowledge",
+                    "Public Health Certifications",
+                    4
+                ],
+                [
+                    "Administration Skills",
+                    "Public Health Certifications",
+                    3
+                ],
+                [
+                    "Job Market",
+                    "Salary",
+                    7
+                ],
+                [
+                    "Educational Background",
+                    "Public Health Certifications",
+                    6
+                ],
+                [
+                    "Professional Experience",
+                    "Policy Knowledge",
+                    7
+                ],
+                [
+                    "Professional Experience",
+                    "Administration Skills",
+                    7
+                ]
+            ],
+            "\n\nThe merged causal graph integrates variables and relationships from multiple domains, including technology, finance, education, game design, and public health, to provide a comprehensive overview of factors influencing career development and salary. The graph starts with foundational aspects such as \"Educational Background,\" \"Professional Experience,\" and \"Interests,\" which are crucial for acquiring the necessary skills and knowledge for a career in various fields. These factors directly influence \"Skill Development,\" which is central to advancing in one's career path.\n\n\"Skill Development\" leads to \"Industry Knowledge,\" \"Networking,\" and \"Portfolio Development,\" indicating that as individuals develop their skills, they also increase their understanding of their industry, build professional relationships, and create work that showcases their abilities. These factors are critical for \"Role Exploration\" and \"Occupation Selection,\" highlighting the importance of understanding available roles and selecting a job that aligns with one's skills and interests.\n\n\"Networking\" plays a significant role in discovering \"Job Opportunities\" and understanding the \"Job Market,\" as professional connections often lead to job openings and insights into industry demand. \"Industry Trends\" also influence \"Job Opportunities,\" suggesting that staying informed about the latest developments can help identify emerging roles.\n\nThe graph culminates in \"Salary\" or \"Income Level,\" reflecting the understanding that while the type of occupation and job market significantly influence salary, other factors such as geographic location, company size, and individual negotiation skills also play critical roles. Additionally, \"Public Health Certifications\" and specific knowledge areas like \"Policy Knowledge\" and \"Administration Skills\" are included to address careers in public health, indicating pathways for professional development within this field.\n\nThis causal graph represents a simplified model of how various factors contribute to career development across different industries, focusing on aspects that directly affect job opportunities, career progression, and salary."
+        ]
+    },
+    {
+        "Task": "Making Optimal Choices Among Alternatives",
+        "Description": "Given a specific situation and a set of decision alternatives, how do we make optimal choices when given a set of alternatives in a decision?",
+        "Exemplar Question": "I've received job offers from three different companies: Amazon AWS L4 SDE in Seattle, Meta Recommendation System E3 SDE in San Diego, and TikTok 1-2 MLE in New York. Considering my career goals of advancing into a leadership position within the next 5 years and my personal preference for a balanced work-life integration, how can I evaluate which job offer is the best overall choice?",
+        "simulated_queries": [
+            "After working for 5 years as a software engineer at a mid-sized tech company, I'm considering either pursuing an MBA or joining a startup as a lead engineer. Given my long-term goal of becoming a CTO, how should I weigh these options?",
+            "I have the opportunity to either stay in my current role as a project manager with a focus on domestic projects or take a new position abroad focusing on international projects. Considering my ambition to work in global operations, which option would better serve my career progression?",
+            "As a recent graduate with a degree in computer science, I'm torn between accepting a job offer from a well-established tech firm with a comprehensive training program and a higher-paying role at a smaller, less-known company. How do I decide which is more beneficial for my career growth in the long run?",
+            "I've been offered two positions: one as a data analyst in a renowned e-commerce company and another as a business intelligence analyst in a fast-growing fintech startup. Given my interest in data science and aspiration to lead a data team, which position should I prioritize?",
+            "Currently a senior graphic designer, I have the chance to either specialize further in UI/UX design at a leading design agency or transition into a product management role at a tech startup. Considering my goal to eventually direct product design strategy, which path is more aligned with my career objectives?"
+        ],
+        "res_graphs": [
+            [
+                {
+                    "Education Level": "The highest level of formal education or training completed.",
+                    "Industry Experience": "Practical experience working in the tech industry, including specific roles and responsibilities.",
+                    "Leadership Experience": "Experience in leading teams or projects, including management skills.",
+                    "Networking": "The extent and quality of professional connections within the tech industry.",
+                    "Innovation and Problem-Solving Skills": "Ability to innovate and solve complex problems, often demonstrated through projects or achievements.",
+                    "Understanding of Business Operations": "Knowledge of how businesses operate, including financial, marketing, and strategic aspects.",
+                    "Startup Experience": "Experience working in or with startup companies, including understanding of the startup ecosystem.",
+                    "CTO Readiness": "Overall preparedness for the role of a Chief Technology Officer, including technical, managerial, and business skills."
+                },
+                [
+                    [
+                        "Education Level",
+                        "Understanding of Business Operations",
+                        7
+                    ],
+                    [
+                        "Industry Experience",
+                        "Innovation and Problem-Solving Skills",
+                        8
+                    ],
+                    [
+                        "Leadership Experience",
+                        "CTO Readiness",
+                        9
+                    ],
+                    [
+                        "Networking",
+                        "CTO Readiness",
+                        6
+                    ],
+                    [
+                        "Innovation and Problem-Solving Skills",
+                        "CTO Readiness",
+                        8
+                    ],
+                    [
+                        "Understanding of Business Operations",
+                        "CTO Readiness",
+                        7
+                    ],
+                    [
+                        "Startup Experience",
+                        "Innovation and Problem-Solving Skills",
+                        7
+                    ],
+                    [
+                        "Startup Experience",
+                        "Leadership Experience",
+                        6
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the key factors that contribute to achieving the goal of becoming a CTO. Each variable and relationship is chosen based on how directly they impact career development towards a CTO role.\n\n1. **Education Level to Understanding of Business Operations (7)**: Higher education, especially an MBA, significantly enhances one's understanding of business operations, which is crucial for a CTO to align technology with business goals.\n\n2. **Industry Experience to Innovation and Problem-Solving Skills (8)**: Practical experience in the tech industry is highly correlated with the ability to innovate and solve complex problems, a core competency for any CTO.\n\n3. **Leadership Experience to CTO Readiness (9)**: Leadership experience is almost a prerequisite for a CTO role, as it involves leading the technology department and making strategic decisions.\n\n4. **Networking to CTO Readiness (6)**: While not as direct as other factors, having a strong professional network can facilitate opportunities for advancement towards a CTO position through mentorship, insights, and opportunities.\n\n5. **Innovation and Problem-Solving Skills to CTO Readiness (8)**: A CTO must be able to tackle complex technical challenges and drive innovation within the company.\n\n6. **Understanding of Business Operations to CTO Readiness (7)**: A good CTO needs to understand business operations to ensure that technology strategies align with business objectives.\n\n7. **Startup Experience to Innovation and Problem-Solving Skills (7)**: Working in a startup often requires innovative thinking and problem-solving due to resource constraints and the need for rapid growth.\n\n8. **Startup Experience to Leadership Experience (6)**: Joining a startup as a lead engineer can provide valuable leadership experience, as it often involves managing teams and projects in a fast-paced environment.\n\nThis causal graph illustrates that both pursuing an MBA and joining a startup as a lead engineer can contribute to the goal of becoming a CTO, but through different pathways. Pursuing an MBA may directly enhance understanding of business operations, while joining a startup can provide practical leadership and innovation experience."
+            ],
+            [
+                {
+                    "Education": "Formal and informal education relevant to global operations.",
+                    "Work Experience": "Previous roles and responsibilities held.",
+                    "International Exposure": "Experience and understanding of international markets, cultures, and business practices.",
+                    "Networking": "Building professional relationships within and outside the industry.",
+                    "Skill Development": "Acquiring new skills relevant to global operations, such as language skills, cross-cultural communication, etc.",
+                    "Career Progression": "Advancement in one's career towards more significant responsibilities, roles, or achievements."
+                },
+                [
+                    [
+                        "Education",
+                        "Skill Development",
+                        7
+                    ],
+                    [
+                        "Work Experience",
+                        "Skill Development",
+                        6
+                    ],
+                    [
+                        "Work Experience",
+                        "Networking",
+                        5
+                    ],
+                    [
+                        "International Exposure",
+                        "Networking",
+                        8
+                    ],
+                    [
+                        "International Exposure",
+                        "Career Progression",
+                        9
+                    ],
+                    [
+                        "Networking",
+                        "Career Progression",
+                        7
+                    ],
+                    [
+                        "Skill Development",
+                        "Career Progression",
+                        8
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the key factors influencing career progression, especially in the context of global operations. The relationships are as follows:\n\n- **Education to Skill Development (7):** Education, both formal and informal, plays a crucial role in acquiring new skills relevant to global operations. The score of 7 reflects the significant, but not exclusive, impact of education on skill development.\n\n- **Work Experience to Skill Development (6):** Practical work experience contributes to skill development, especially skills that are not taught in educational settings. The score of 6 indicates a strong relationship, though slightly less direct than education.\n\n- **Work Experience to Networking (5):** Through work experience, individuals have opportunities to build professional networks. The score of 5 suggests a moderate impact, acknowledging that networking also heavily depends on individual initiative.\n\n- **International Exposure to Networking (8):** International exposure significantly enhances networking opportunities, especially with professionals and organizations across different countries. The score of 8 reflects the high impact of international exposure on networking.\n\n- **International Exposure to Career Progression (9):** For someone aiming to work in global operations, international exposure is almost indispensable. It directly impacts career progression in this field, hence the score of 9.\n\n- **Networking to Career Progression (7):** Networking can open up opportunities for career advancement through mentorship, recommendations, and knowledge of new opportunities. The score of 7 indicates a strong relationship.\n\n- **Skill Development to Career Progression (8):** The acquisition of new and relevant skills is crucial for advancing in one's career, especially in specialized fields like global operations. The score of 8 underscores the importance of continuous skill development.\n\nThis causal graph illustrates that for someone aiming to progress in a career focused on global operations, gaining international exposure is a critical step that directly and significantly impacts career progression. It also highlights the importance of networking and skill development as intermediary steps that facilitate career advancement. Given the user's ambition to work in global operations, taking a new position abroad focusing on international projects would likely better serve their career progression, as it directly enhances international exposure, which is a key driver of career advancement in this context."
+            ],
+            [
+                {
+                    "Job Security": "The likelihood of job retention over time.",
+                    "Salary": "The amount of money earned annually from a job.",
+                    "Training and Development": "Opportunities provided by the company for professional growth.",
+                    "Company Reputation": "Public perception and industry standing of the company.",
+                    "Career Growth Opportunities": "Potential for advancement and skill development in a career path.",
+                    "Work-Life Balance": "The equilibrium between professional responsibilities and personal life.",
+                    "Networking Opportunities": "Chances to connect with professionals within and outside the company."
+                },
+                [
+                    [
+                        "Job Security",
+                        "Career Growth Opportunities",
+                        7
+                    ],
+                    [
+                        "Salary",
+                        "Work-Life Balance",
+                        5
+                    ],
+                    [
+                        "Training and Development",
+                        "Career Growth Opportunities",
+                        8
+                    ],
+                    [
+                        "Company Reputation",
+                        "Networking Opportunities",
+                        9
+                    ],
+                    [
+                        "Career Growth Opportunities",
+                        "Optimal Career Decision",
+                        8
+                    ],
+                    [
+                        "Work-Life Balance",
+                        "Optimal Career Decision",
+                        6
+                    ],
+                    [
+                        "Networking Opportunities",
+                        "Career Growth Opportunities",
+                        7
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the key factors that influence the optimal career decision for a recent computer science graduate considering two job offers. \n\n1. **Job Security to Career Growth Opportunities (7):** A stable job can provide a solid foundation for long-term career growth, as it allows for planning and progression without the immediate fear of job loss.\n\n2. **Salary to Work-Life Balance (5):** While a higher salary is attractive, it may come at the cost of longer hours or more stress, potentially affecting work-life balance. However, this relationship is not deterministic since high salaries can also provide resources for better life quality outside work.\n\n3. **Training and Development to Career Growth Opportunities (8):** Opportunities for professional development are crucial for career advancement, especially in the tech industry where continuous learning is vital. A company that invests in training its employees is likely to facilitate faster and more significant career growth.\n\n4. **Company Reputation to Networking Opportunities (9):** Working for a well-regarded company can open doors to networking opportunities with industry leaders and peers, which is invaluable for career development.\n\n5. **Career Growth Opportunities to Optimal Career Decision (8):** The potential for advancement and skill development is a critical factor in making an optimal career choice, as it directly impacts long-term career satisfaction and success.\n\n6. **Work-Life Balance to Optimal Career Decision (6):** Maintaining a healthy balance between work and personal life contributes to overall satisfaction and well-being, which is important for long-term career decisions. However, its impact may vary based on individual priorities.\n\n7. **Networking Opportunities to Career Growth Opportunities (7):** The connections made through networking can lead to new opportunities for career advancement, such as job offers, collaborations, or mentorships.\n\nThis causal graph provides a structured way to evaluate the decision between a job offer from a well-established tech firm with a comprehensive training program and a higher-paying role at a smaller, less-known company, focusing on long-term career growth."
+            ],
+            [
+                {
+                    "Industry Growth": "The potential for growth within the industry where the company operates.",
+                    "Company Reputation": "The public perception and market standing of the company.",
+                    "Role Alignment with Career Goals": "How well the job position aligns with the individual's long-term career aspirations.",
+                    "Opportunities for Skill Development": "The extent to which the job provides opportunities to learn new skills or improve existing ones.",
+                    "Networking Opportunities": "The potential to connect with professionals and experts in the field.",
+                    "Promotion and Leadership Opportunities": "The likelihood of moving up the career ladder within the organization.",
+                    "Work-Life Balance": "The ability to maintain a healthy balance between work responsibilities and personal life.",
+                    "Job Security": "The stability and security of the job position."
+                },
+                [
+                    [
+                        "Industry Growth",
+                        "Opportunities for Skill Development",
+                        7
+                    ],
+                    [
+                        "Company Reputation",
+                        "Networking Opportunities",
+                        8
+                    ],
+                    [
+                        "Role Alignment with Career Goals",
+                        "Promotion and Leadership Opportunities",
+                        9
+                    ],
+                    [
+                        "Opportunities for Skill Development",
+                        "Promotion and Leadership Opportunities",
+                        8
+                    ],
+                    [
+                        "Networking Opportunities",
+                        "Promotion and Leadership Opportunities",
+                        7
+                    ],
+                    [
+                        "Promotion and Leadership Opportunities",
+                        "Aspiration to Lead a Data Team",
+                        9
+                    ],
+                    [
+                        "Work-Life Balance",
+                        "Job Security",
+                        6
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the key factors that influence career development, especially in the context of choosing between two job offers with an aspiration to lead a data team in the future.\n\n1. **Industry Growth to Opportunities for Skill Development (7):** A growing industry typically presents more opportunities for learning and development. The fintech startup may offer rapid skill development due to its fast-paced environment, while the e-commerce sector's established nature might provide structured learning paths.\n\n2. **Company Reputation to Networking Opportunities (8):** Working for a renowned company can significantly enhance networking opportunities due to its visibility and connections in the industry. This can be crucial for career advancement.\n\n3. **Role Alignment with Career Goals to Promotion and Leadership Opportunities (9):** A job that aligns closely with one's career goals is likely to offer more relevant opportunities for promotion and eventually leading a team. This is a critical factor for someone aspiring to lead a data team.\n\n4. **Opportunities for Skill Development to Promotion and Leadership Opportunities (8):** The ability to develop relevant skills directly impacts one's readiness for promotion and leadership roles. Both roles offer different paths for skill development, which could influence promotion opportunities.\n\n5. **Networking Opportunities to Promotion and Leadership Opportunities (7):** Networking can play a significant role in identifying and securing leadership opportunities within and outside the current organization.\n\n6. **Promotion and Leadership Opportunities to Aspiration to Lead a Data Team (9):** This relationship is central to the user's goal. The job that offers more concrete and aligned opportunities for promotion and leadership in data science should be prioritized.\n\n7. **Work-Life Balance to Job Security (6):** While not directly related to the immediate decision, maintaining a healthy work-life balance can contribute to long-term job satisfaction and security by preventing burnout and ensuring consistent performance.\n\nThis causal graph provides a structured way to evaluate the two job offers based on factors that directly contribute to achieving the user's career goal of leading a data team. It emphasizes the importance of role alignment with career goals, opportunities for skill development, and the potential for promotion and leadership as key determinants."
+            ],
+            [
+                {
+                    "Specialization in UI/UX Design": "Gaining deeper knowledge and skills in UI/UX design, focusing on creating user-friendly and aesthetically pleasing interfaces.",
+                    "Transition into Product Management": "Moving into a role focused on planning, forecasting, production, and marketing of a product at all stages of the product lifecycle.",
+                    "Industry Experience": "The accumulation of knowledge, skills, and competencies as a result of years of working within the design or tech industries.",
+                    "Networking": "Building and maintaining professional relationships that could lead to opportunities and advancements in one's career.",
+                    "Understanding of Market Trends": "Awareness and comprehension of the current and future directions in which design and technology markets are heading.",
+                    "Leadership Skills": "The ability to guide, inspire, and direct a team or project towards achieving a goal.",
+                    "Product Design Strategy": "The planning and execution of the design aspects of a product, including its usability, functionality, and aesthetics, to meet market demands and user needs."
+                },
+                [
+                    [
+                        "Specialization in UI/UX Design",
+                        "Industry Experience",
+                        8
+                    ],
+                    [
+                        "Transition into Product Management",
+                        "Industry Experience",
+                        7
+                    ],
+                    [
+                        "Industry Experience",
+                        "Networking",
+                        6
+                    ],
+                    [
+                        "Networking",
+                        "Understanding of Market Trends",
+                        5
+                    ],
+                    [
+                        "Understanding of Market Trends",
+                        "Product Design Strategy",
+                        7
+                    ],
+                    [
+                        "Transition into Product Management",
+                        "Leadership Skills",
+                        8
+                    ],
+                    [
+                        "Leadership Skills",
+                        "Product Design Strategy",
+                        9
+                    ]
+                ],
+                "\n\nThe causal graph is designed to reflect the pathways through which specializing in UI/UX design or transitioning into product management can lead to directing product design strategy, considering the user's career objectives.\n\n1. **Specialization in UI/UX Design** and **Transition into Product Management** both directly contribute to gaining **Industry Experience**. Specializing in UI/UX design might have a slightly higher impact (score of 8) on industry experience relevant to product design strategy compared to transitioning into product management (score of 7) due to the direct relevance of design skills.\n\n2. **Industry Experience** is crucial for effective **Networking** (score of 6), as it provides the professional credibility and knowledge necessary to build meaningful connections.\n\n3. **Networking** can lead to a better **Understanding of Market Trends** (score of 5), as interactions with a diverse set of professionals provide insights into the latest industry developments.\n\n4. **Understanding of Market Trends** is essential for formulating an effective **Product Design Strategy** (score of 7), as it ensures that the strategy is aligned with market demands and future directions.\n\n5. Transitioning into **Product Management** is highly conducive to developing **Leadership Skills** (score of 8), as the role inherently involves leading and coordinating across different teams and projects.\n\n6. **Leadership Skills** are critical for directing **Product Design Strategy** (score of 9), as they enable the individual to guide and inspire the design team, ensuring that the product's design aligns with the overall business strategy and market needs.\n\nThis causal graph illustrates that both paths can lead to the goal of directing product design strategy, but they do so through different mechanisms and skill sets. Specializing in UI/UX design enhances industry-specific knowledge and skills directly related to design, while transitioning into product management develops leadership skills and a broader understanding of product development, both of which are essential for directing product design strategy."
+            ]
+        ],
+        "merged_graphs": [
+            {
+                "Education Level": "The highest level of formal education or training completed.",
+                "Industry Experience": "Practical experience working in the tech industry, including specific roles and responsibilities.",
+                "Leadership Experience": "Experience in leading teams or projects, including management skills.",
+                "Networking": "The extent and quality of professional connections within the tech industry.",
+                "Innovation and Problem-Solving Skills": "Ability to innovate and solve complex problems, often demonstrated through projects or achievements.",
+                "Understanding of Business Operations": "Knowledge of how businesses operate, including financial, marketing, and strategic aspects.",
+                "Startup Experience": "Experience working in or with startup companies, including understanding of the startup ecosystem.",
+                "CTO Readiness": "Overall preparedness for the role of a Chief Technology Officer, including technical, managerial, and business skills.",
+                "Education": "Formal and informal education relevant to global operations.",
+                "Work Experience": "Previous roles and responsibilities held.",
+                "International Exposure": "Experience and understanding of international markets, cultures, and business practices.",
+                "Skill Development": "Acquiring new skills relevant to global operations, such as language skills, cross-cultural communication, etc.",
+                "Career Progression": "Advancement in one's career towards more significant responsibilities, roles, or achievements.",
+                "Job Security": "The likelihood of job retention over time.",
+                "Salary": "The amount of money earned annually from a job.",
+                "Training and Development": "Opportunities provided by the company for professional growth.",
+                "Company Reputation": "Public perception and industry standing of the company.",
+                "Career Growth Opportunities": "Potential for advancement and skill development in a career path.",
+                "Work-Life Balance": "The equilibrium between professional responsibilities and personal life.",
+                "Optimal Career Decision": "Choosing the best career path based on a set of given factors.",
+                "Industry Growth": "The potential for growth within the industry where the company operates.",
+                "Role Alignment with Career Goals": "How well the job position aligns with the individual's long-term career aspirations.",
+                "Opportunities for Skill Development": "The extent to which the job provides opportunities to learn new skills or improve existing ones.",
+                "Promotion and Leadership Opportunities": "The likelihood of moving up the career ladder within the organization.",
+                "Aspiration to Lead a Data Team": "The goal of leading a team focused on data analysis, data science, or similar fields.",
+                "Specialization in UI/UX Design": "Gaining deeper knowledge and skills in UI/UX design, focusing on creating user-friendly and aesthetically pleasing interfaces.",
+                "Transition into Product Management": "Moving into a role focused on planning, forecasting, production, and marketing of a product at all stages of the product lifecycle.",
+                "Understanding of Market Trends": "Awareness and comprehension of the current and future directions in which design and technology markets are heading.",
+                "Product Design Strategy": "The planning and execution of the design aspects of a product, including its usability, functionality, and aesthetics, to meet market demands and user needs."
+            },
+            [
+                [
+                    "Education Level",
+                    "Understanding of Business Operations",
+                    7
+                ],
+                [
+                    "Industry Experience",
+                    "Innovation and Problem-Solving Skills",
+                    8
+                ],
+                [
+                    "Leadership Experience",
+                    "CTO Readiness",
+                    9
+                ],
+                [
+                    "Networking",
+                    "CTO Readiness",
+                    6
+                ],
+                [
+                    "Innovation and Problem-Solving Skills",
+                    "CTO Readiness",
+                    8
+                ],
+                [
+                    "Understanding of Business Operations",
+                    "CTO Readiness",
+                    7
+                ],
+                [
+                    "Startup Experience",
+                    "Innovation and Problem-Solving Skills",
+                    7
+                ],
+                [
+                    "Startup Experience",
+                    "Leadership Experience",
+                    6
+                ],
+                [
+                    "Education",
+                    "Skill Development",
+                    7
+                ],
+                [
+                    "Work Experience",
+                    "Skill Development",
+                    6
+                ],
+                [
+                    "Work Experience",
+                    "Networking",
+                    5
+                ],
+                [
+                    "International Exposure",
+                    "Networking",
+                    8
+                ],
+                [
+                    "International Exposure",
+                    "Career Progression",
+                    9
+                ],
+                [
+                    "Networking",
+                    "Career Progression",
+                    7
+                ],
+                [
+                    "Skill Development",
+                    "Career Progression",
+                    8
+                ],
+                [
+                    "Job Security",
+                    "Career Growth Opportunities",
+                    7
+                ],
+                [
+                    "Salary",
+                    "Work-Life Balance",
+                    5
+                ],
+                [
+                    "Training and Development",
+                    "Career Growth Opportunities",
+                    8
+                ],
+                [
+                    "Company Reputation",
+                    "Networking",
+                    9
+                ],
+                [
+                    "Career Growth Opportunities",
+                    "Optimal Career Decision",
+                    8
+                ],
+                [
+                    "Work-Life Balance",
+                    "Optimal Career Decision",
+                    6
+                ],
+                [
+                    "Networking",
+                    "Career Growth Opportunities",
+                    7
+                ],
+                [
+                    "Industry Growth",
+                    "Opportunities for Skill Development",
+                    7
+                ],
+                [
+                    "Role Alignment with Career Goals",
+                    "Promotion and Leadership Opportunities",
+                    9
+                ],
+                [
+                    "Opportunities for Skill Development",
+                    "Promotion and Leadership Opportunities",
+                    8
+                ],
+                [
+                    "Networking",
+                    "Promotion and Leadership Opportunities",
+                    7
+                ],
+                [
+                    "Promotion and Leadership Opportunities",
+                    "Aspiration to Lead a Data Team",
+                    9
+                ],
+                [
+                    "Work-Life Balance",
+                    "Job Security",
+                    6
+                ],
+                [
+                    "Specialization in UI/UX Design",
+                    "Industry Experience",
+                    8
+                ],
+                [
+                    "Transition into Product Management",
+                    "Industry Experience",
+                    7
+                ],
+                [
+                    "Industry Experience",
+                    "Networking",
+                    6
+                ],
+                [
+                    "Networking",
+                    "Understanding of Market Trends",
+                    5
+                ],
+                [
+                    "Understanding of Market Trends",
+                    "Product Design Strategy",
+                    7
+                ],
+                [
+                    "Transition into Product Management",
+                    "Leadership Skills",
+                    8
+                ],
+                [
+                    "Leadership Skills",
+                    "Product Design Strategy",
+                    9
+                ]
+            ],
+            "\n\nThe merged causal graph integrates key factors from various career paths, emphasizing the multifaceted nature of career development. It combines elements from the pursuit of a CTO role, global operations career progression, optimal career decision-making, aspirations to lead a data team, and pathways in UI/UX design and product management. This comprehensive approach ensures that the graph reflects a wide range of career development processes, making it applicable to users with diverse career goals.\n\n1. **Education and Skill Development**: The graph underscores the importance of both formal education and continuous skill development across different career paths. It highlights how education contributes to understanding business operations, skill acquisition, and innovation, which are crucial for leadership roles and specialized fields.\n\n2. **Industry Experience**: Practical experience in the industry is shown to be a cornerstone for innovation, networking, and transitioning into roles with greater responsibility. This experience is vital for understanding market trends and contributing to product design strategy.\n\n3. **Networking**: The graph illustrates networking's role in career progression, providing opportunities for career growth, understanding market trends, and facilitating transitions into leadership positions.\n\n4. **Leadership and Career Growth Opportunities**: Leadership experience and the pursuit of opportunities for skill development are directly linked to readiness for top roles, such as a CTO or leading a data team, and to career growth opportunities in general.\n\n5. **Balancing Factors**: The graph also considers the balance between work-life and job security, showing how these factors contribute to making optimal career decisions.\n\n6. **Specialization and Transition Paths**: It includes pathways through specialization in UI/UX design and transitioning into product management, showing how these can lead to industry experience, leadership skills, and ultimately, the ability to direct product design strategy.\n\nThis causal graph serves as a comprehensive guide for users to understand the interconnected factors influencing career development and decision-making, tailored to a wide range of career objectives."
+        ]
+    },
+    {
+        "Task": "Estimating Job Offer Chances",
+        "Description": "Given a job, how do we estimate the chance of getting in?",
+        "Exemplar Question": "With a Ph.D. in Computer Vision and experience interning at WeRide and Uber, what are my chances of securing a position at a major tech company like Google or Facebook as a machine learning engineer in the coming recruiting season?"
+    },
+    {
+        "Task": "Identifying Gaps for Career Advancement",
+        "Description": "This task aims to analyze a user's current experience against the desired end-goal position to identify critical skill gaps that need to be filled. By comparing the user's resume with those of individuals who have successfully transitioned to the target role, the system can suggest specific skills, certifications, or experiences needed.",
+        "Exemplar Question": "I'm a L5 software engineer at Amazon with 5 years of experience in web development, mainly using JavaScript and React. I aspire to advance to L6. What specific skills or experience should I focus on acquiring to make this transition more likely?"
+    },
+    {
+        "Task": "Networking Strategy Optimization",
+        "Description": "This task focuses on optimizing a user's networking strategy by identifying influential professionals in their desired career path. By analyzing the career trajectories and connections of successful individuals in a specific field, it recommends whom to connect with, what kind of professional groups to join, and which conferences to attend.",
+        "Exemplar Question": "I am an aspiring biotech entrepreneur looking to start my own company in the next 5 years. Who are the key individuals I should connect with, and what professional groups or events should I prioritize to maximize my chances of success?"
+    },
+    {
+        "Task": "Predicting Industry Trends and Their Impact on Careers",
+        "Description": "This task aims to forecast emerging trends in various industries and their potential impact on job roles and skill requirements. Analyzing the career paths of individuals who have successfully adapted to industry changes in the past can offer predictions and recommendations for users to future-proof their careers.",
+        "Exemplar Question": "With rapid advancements in artificial intelligence, how is the field of accounting expected to change in the next 5 years, and how can I prepare myself to remain relevant and competitive in this evolving landscape?"
+    }
+]
