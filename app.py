@@ -47,6 +47,9 @@ with tabs[-1]:
 
         for edge in merged_graph[1]:
             graph.edge(edge[0], edge[1], label=str(edge[2]))
+        st.write("## The Merged Causal Graph Created from All Queries")
+        st.write("This is a merged graph created from all the queries. The main goal is to check reusability of the individually generated causal graphs.")
+        st.write("The edge label numbers are GPT's scores (out of 10) for causal relationships represented by the edges.")
         st.write("## Causal Graph Created from Queries")
         st.graphviz_chart(graph)
         st.write("## Causal Graph Node Explanation")
