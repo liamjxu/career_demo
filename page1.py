@@ -26,9 +26,9 @@ for idx, (query, res) in enumerate(zip(all_queries, all_graphs)):
           st.write("## Causal Graph Created from Query")
           st.write("The edge label numbers are GPT's scores (out of 10) for causal relationships represented by the edges.")
           st.graphviz_chart(graph)
-          st.write("## Causal Graph Node and Explanation")
+          st.write("## Causal Graph Nodes and Explanation")
           st.write(res[0])
-          st.write("## Causal Graph Edge and Explanation")
+          st.write("## Causal Graph Edges and Explanation")
           st.write(res[2])
 
 with tabs[-1]:
@@ -43,7 +43,7 @@ with tabs[-1]:
         st.write("The edge label numbers are GPT's scores (out of 10) for causal relationships represented by the edges.")
         st.write("## Causal Graph Created from Queries")
         st.graphviz_chart(graph)
-        st.write("## Causal Graph Node Explanation")
+          st.write("## Causal Graph Nodes and Explanation")
         st.write(merged_graph[0])
-        st.write("## Causal Graph Reasoning")
+          st.write("## Causal Graph Edges and Explanation")
         st.write(merged_graph[2])
