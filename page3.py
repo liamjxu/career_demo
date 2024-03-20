@@ -10,7 +10,7 @@ all_queries = data[2]['simulated_queries']
 all_graphs = data[2]['res_graphs']
 merged_graph = data[2]['merged_graphs']
 
-tabs = st.tabs(['Query 0', 'Query 1', 'Query 2', 'Query 3', 'Query 4', 'Merged'])
+tabs = st.tabs(['Query 1', 'Query 2', 'Query 3', 'Query 4', 'Query 5', 'Merged'])
 
 for idx, (query, res) in enumerate(zip(all_queries, all_graphs)):
     # Create multiple tabs

@@ -1,7 +1,17 @@
 import streamlit as st
 import graphviz
 import json
+from st_pages import Page, show_pages
 
+
+show_pages(
+    [
+        Page("page1.py", "Query Type 1: Curating a Career Plan", icon="1️⃣"),
+        Page("page2.py", "Query Type 2: Suggesting Potential Occupations and Wage Projections", icon="2️⃣"),
+        Page("page3.py", "Query Type 3: Making Optimal Choices Among Alternatives", icon="3️⃣"),
+        Page("system.py", "The System We Used", icon="🛠️"),
+    ]
+)
 
 with open('typical_tasks_example_questions_graphs_merged.json', 'r') as f:
     data = json.load(f)
@@ -10,7 +20,7 @@ all_queries = data[0]['simulated_queries']
 all_graphs = data[0]['res_graphs']
 merged_graph = data[0]['merged_graphs']
 
-tabs = st.tabs(['Query 0', 'Query 1', 'Query 2', 'Query 3', 'Query 4', 'Merged'])
+tabs = st.tabs(['Query 1', 'Query 2', 'Query 3', 'Query 4', 'Query 5', 'Merged'])
 
 for idx, (query, res) in enumerate(zip(all_queries, all_graphs)):
     # Create multiple tabs

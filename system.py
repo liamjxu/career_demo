@@ -1,18 +1,8 @@
 import streamlit as st
-from st_pages import Page, show_pages
 import requests
 import json
 from streamlit_extras.stylable_container import stylable_container
 
-
-show_pages(
-    [
-        Page("app.py", "Home", icon="🏠"),
-        Page("page1.py", "Curating a Career Plan", icon="1️⃣"),
-        Page("page2.py", "Suggesting Potential Occupations and Wage Projections", icon="2️⃣"),
-        Page("page3.py", "Making Optimal Choices Among Alternatives", icon="3️⃣"),
-    ]
-)
 
 st.write("# Finding Causal Graphs with LLMs")
 
